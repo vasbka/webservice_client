@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="faculty.xsl" ?>
+<fc:faculties xmlns:fc="http://nure.ua/honcharenkoilchishen/faculty"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fc:faculty id="0">
+    <fc:title>someaq</fc:title>
+    <fc:shortTitle>KN</fc:shortTitle>
+    <fc:placeCount>2</fc:placeCount>
+    <fc:budgetPlaceCount>999</fc:budgetPlaceCount>
+    <fc:facultyBranch>Mathmetical</fc:facultyBranch>
+    <fc:facultyRoomNumber>
+      <fc:no/>
+    </fc:facultyRoomNumber>
+    <fc:additional>
+      <fc:bacheloerCount year="2021">15</fc:bacheloerCount>
+    </fc:additional>
+  </fc:faculty>
+</fc:faculties>
