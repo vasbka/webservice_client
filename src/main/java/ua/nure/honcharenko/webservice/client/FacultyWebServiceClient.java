@@ -11,14 +11,13 @@ import java.net.URL;
 
 public class FacultyWebServiceClient {
     public static void main(String[] args) throws Exception {
-        URL url = new URL("http://localhost:1986/wss/faculty?wsdl");
-        QName qname = new QName("http://impl.webservice.honcharenkoilchishen.nure.ua/",
-                "FacultyWebServiceImplService");
+        URL url = new URL("http://localhost:9000/faculty?wsdl");
+        QName qname = new QName("http://nure.ua/honcharenkoilchishen/service",
+                "Faculties");
 
         Service service = Service.create(url, qname);
 
-        QName portName = new QName("http://impl.webservice.honcharenkoilchishen.nure.ua/","FacultyWebServiceImplPort");
-        FacultyWebService facultyService = service.getPort(portName, FacultyWebService.class);
+        FacultyWebService facultyService = service.getPort(FacultyWebService.class);
 
         Faculty faculty = new Faculty();
         faculty.setId(2);
